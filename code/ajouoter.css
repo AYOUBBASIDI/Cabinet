@@ -1,0 +1,254 @@
+body{
+    background-color: #EAF3FA;
+    font-family: 'Abel', sans-serif;
+    margin: 0px;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 0px;
+}
+
+#logo{
+    width: 75x;
+    height: 75px;
+    margin-top: 10px;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 30px;
+}
+
+ul li{
+    margin-right: 80px;
+    font-size: 18px;
+}
+
+a{
+    text-decoration: none;
+    font-family: 'Abel', sans-serif;
+    font-size: 18px;
+    color: black;
+}
+
+#hamburger-icon {
+    margin: auto 0;
+    display: none;
+    cursor: pointer;
+}
+
+#hamburger-icon ul li a{
+    color:black;
+    background-color: #00C2ED;
+}
+
+#hamburger-icon div {
+    width: 35px;
+    height: 3px;
+    background-color:#00C2ED;
+    margin: 6px 0;
+    transition: 0.4s;
+
+}
+
+.open .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-6px, 6px);
+    transform: rotate(-45deg) translate(-6px, 6px);
+}
+
+.open .bar2 {
+    opacity: 0;
+}
+
+.open .bar3 {
+    -webkit-transform: rotate(45deg) translate(-6px, -8px);
+    transform: rotate(45deg) translate(-6px, -8px);
+}
+
+.open .mobile-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.mobile-menu {
+    background-color: #00C2ED;
+    display: none;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    height: calc(100vh - 50px);
+    width: 100%;
+}
+
+
+.mobile-menu li {
+    margin-top: 10px;
+}
+
+h1{
+    color: #00C2ED;
+    text-decoration-style: solid ;
+    text-decoration-line: underline;
+    text-decoration-color: #00C2ED;
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 8px;
+}
+
+.div1 , .div2{
+    margin: 10px auto;
+}
+
+
+.first_row , .second_row , .third_row{
+    display: flex;
+    margin-left: 15%;
+    width: 70%;
+}
+
+input{
+    background-color: #EAF3FA;
+    border: solid 3px #00C2ED;
+    margin-right: 20px;
+    width: 400px;
+    height: 50px;
+    border-radius: 7px;
+    margin-left: 0px;
+}
+
+P{
+    margin-bottom: 5px;
+    margin-top: 0px;
+}
+
+button{
+    color: white;
+    background-color: #00C2ED;
+    border-radius: 10px;
+    border: none;
+    font-weight: bold;
+    width:8%;
+    height: 50px;
+    margin-left: 45%;
+    margin-bottom: 10px;
+}
+
+.footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #00C2ED;
+    width: 100%;
+    padding: 0px;
+}
+
+
+.footer ul li{
+    margin-right: 0px;
+}
+.footer ul{
+    margin-right: 15px;
+}
+
+.footer ul li img{
+    width: 30px;
+    height: 30px;
+    margin-left: 20px;
+}
+.footer p{
+    line-height: 0.5;
+    margin-left: 15px;
+    margin-top: 10px;
+}
+#centerP{
+    margin-top: 30px;
+    margin-left: 0px;
+}
+.vec{
+    width: 60px;
+    margin-left: -55px;
+    margin-bottom: 14px;
+    margin-top: -46px;
+}
+
+#result{
+    display:none;
+    background-color: rgba(255, 255, 255,0.9);
+    width: 425px;
+    padding: 10px 20px ;
+    font-size: 40px;
+    border-radius: 15px;
+    margin-left: 30%;
+    margin-top: -20%;
+    position:absolute;
+}
+
+.parents{
+    position:relative;
+}
+.vec1{
+    width: 25px;
+    height: 25px;
+}
+@media only screen and (max-width: 600px) {
+    #logo{
+        width: 55x;
+        height: 55px;
+    }
+    .menu {
+      display: none;
+    }
+  
+    #hamburger-icon {
+      display: block;
+      margin-right: 20px;
+    }
+
+
+
+    .first_row , .second_row , .third_row{
+        display: block;
+        margin-left: 10%;
+    }
+
+    input{
+        margin-right: 0px;
+        width: 300px;
+    }
+
+    button{
+        width:50%;
+        margin-left: 25%;
+        margin-bottom: 15px;
+    }
+
+    p{
+        margin-top: 17px;
+    }
+
+    .footer{
+        z-index: -1;
+    }
+
+    .footer ul{
+        display: block;
+    }
+    .footer .firstP{
+        height: 60px;
+    }
+
+    #centerP{
+        margin-top: 90px;
+        width: 500px;
+        left: 0;
+        margin-left: 0px;
+        padding-left: 0px;
+    }
+    
+  }
